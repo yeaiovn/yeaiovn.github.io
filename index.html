@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.112.5">
-    <title>Signin Template · Bootstrap v5.3</title>
+    <meta name="author" content="yeaiovn">
+    
+    <title>YEA.IO.VN</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
     
@@ -143,18 +143,29 @@
         </li>
       </ul>
     </div>
-
     
 <main class="form-signin w-100 m-auto">
   <form>
+<script>
+    function test {
+        var reg = getAllUrlParams().reg;
+        //var i = getAllUrlParams().i
+        //var j = getAllUrlParams().j
+        
+        alert(reg);
+    }
+</script>
+    <h1 class="h3 mb-3 fw-normal">Có ai đó mời tham gia YEA.IO.VN</h1>
+    <button class="btn btn-primary w-100 py-2" onclick="test();">Tham Gia</button>
+    <p class="mt-5 mb-3 text-body-secondary">* Nếu chưa có ứng dụng xmpp nào bạn vui lòng tự cài đặt từ CHPlay- Hoặc trực tiếp <a href="?dl">tại đây</a></p>
     <!--
     <img class="mb-4" src="//getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
     -->
-    <h1 class="h3 mb-3 fw-normal">Enter anything</h1>
-  <div class="form-floating">
+    <!--h1 class="h3 mb-3 fw-normal">Enter anything</h1-->
+  <!--div class="form-floating">
     <label for="exampleFormControlTextarea1">Example textarea</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
+  </div-->
 
     <!--div class="form-floating">
       <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -171,11 +182,11 @@
         Remember me
       </label>
     </div-->
-    <button class="btn btn-primary w-100 py-2" type="submit">SUBMIT</button>
-    <p class="mt-5 mb-3 text-body-secondary">&copy; 2023–2028</p>
+    <!--button class="btn btn-primary w-100 py-2" type="submit">SUBMIT</button-->
+
   </form>
 </main>
 <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="UrlParams.js"></script>
     </body>
 </html>
