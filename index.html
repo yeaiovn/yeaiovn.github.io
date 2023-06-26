@@ -148,13 +148,15 @@
   
 <script>
     function test {
-        var reg = getAllUrlParams().reg;
+        var inv = getAllUrlParams().inv;
         //var i = getAllUrlParams().i
         //var j = getAllUrlParams().j
         
-        alert(reg);
+        alert(
+          JSON.stringify(inv,null,4)
+             );
     }
-  document.querySelector('r1').innerHTML = getAllUrlParams().reg;
+  document.querySelector('r1').innerHTML = "preauth:" + JSON.stringify(inv,null,2);
 </script>
   <div id='r1'></div>
     <h1 class="h3 mb-3 fw-normal">Có ai đó mời tham gia YEA.IO.VN</h1>
