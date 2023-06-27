@@ -1,24 +1,26 @@
 //window.onload = function () { 
 
-var u = 'yea.io.vn'; 
-var preauth = getAllUrlParams().inv;
-var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent); 
+var token = getAllUrlParams().inv;
+var register = "xmpp:yea.io.vn?register;preauth=" + token;
+
+var userAgent = navigator.userAgent.toLowerCase();
+var isAndroid = userAgent.indexOf("android") > -1;
+              
 function reg(){
-if (isMobile) {
-    var now = new Date().valueOf(); 
-//xmpp:yea.io.vn?register;preauth=JcR5D5lcr5DJpxpjEHIOU1Gc
-    window.location = 'xmpp:yea.io.vn?register;preauth='+preauth;
-    
+    if (isAndroid) {
+    window.location = register;
+    /*
+    var now = new Date().valueOf();
     setTimeout(function () {
         if (new Date().valueOf() - now > 5000) {
             return;
             }
             window.location = 'https://'+u;
         }, 4000);
-        
-} else {
-    window.location = 'https://'+u;
+    */
+    } else {
+    window.location = 'https://yea.io.vn/dl/';
     }
 }
 
-document.querySelector("#preauth").innerHTML = "khoá: "+JSON.stringify(preauth,null,2);
+document.querySelector("#preauth").innerHTML = "khóa: " + token;
