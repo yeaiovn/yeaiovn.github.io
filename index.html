@@ -145,23 +145,10 @@
     </div>
     
 <main class="form-signin w-100 m-auto">
-  
-<script>
-    function test {
-        var inv = getAllUrlParams().inv;
-        //var i = getAllUrlParams().i
-        //var j = getAllUrlParams().j
-        
-        alert(
-          JSON.stringify(inv,null,4)
-             );
-    }
-  document.querySelector('r1').innerHTML = "preauth:" + JSON.stringify(inv,null,2);
-</script>
-  <div id='r1'></div>
-    <h1 class="h3 mb-3 fw-normal">Có ai đó mời tham gia YEA.IO.VN</h1>
-    <button onclick="test()" class="btn btn-primary w-100 py-2">Tham Gia</button>
-    <p class="mt-5 mb-3 text-body-secondary">* Nếu chưa có ứng dụng xmpp nào bạn vui lòng tự cài đặt từ CHPlay- Hoặc trực tiếp <a href="?dl">tại đây</a></p>
+    <h1 class="h3 mb-3 fw-normal">Có ai đó mời dùng YEA.IO.VN</h1>
+    <button onclick="reg();" class="btn btn-primary w-100 py-2">THAM GIA</button>
+    <p id='preauth' class="mt-5 mb-3 text-body-secondary">*</p>
+    <!--p class="mt-5 mb-3 text-body-secondary">* Nếu chưa có ứng dụng xmpp nào bạn vui lòng tự cài đặt từ CHPlay - Hoặc tải trực tiếp <a href="?dl">tại đây</a></p-->
   <form>
   <!--
     <img class="mb-4" src="//getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
@@ -193,5 +180,6 @@
 </main>
 <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="UrlParams.js"></script>
+<script src="index.js"></script>
     </body>
 </html>
